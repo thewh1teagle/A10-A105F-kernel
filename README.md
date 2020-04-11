@@ -16,7 +16,8 @@ https://forum.xda-developers.com/galaxy-a10/development/recovery-twrp-3-3-1-gala
 3.
 
 get aarch64-linux-android-4.9 toolchain for compiling
-
+you can get it from google git or from here 
+https://github.com/mscalindt/aarch64-linux-android-4.9.git
 4.
 
 compile ( see README_Kernel.txt )
