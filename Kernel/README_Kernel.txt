@@ -8,7 +8,8 @@
                         EX)  CROSS_COMPILE=../aarch64-linux-android-4.9/bin/aarch64-linux-android-
                         EX)  CROSS_COMPILE=/usr/local/toolchain/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- // check the location of toolchain
         - to Build
-
+                $ export CROSS_COMPILE=../aarch64-linux-android-4.9/bin/aarch64-linux-android-
+                $ export ANDROID_MAJOR_VERSION=10
                 $ make a10_00_defconfig
                 $ make menuconfig (edit your kernel as you like)
                 $ make -j64
