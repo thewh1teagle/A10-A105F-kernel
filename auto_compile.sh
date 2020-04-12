@@ -1,6 +1,4 @@
 echo "Don't forget to root your device using magisk"
-sleep 1
-
 
 ## install tools
 
@@ -18,7 +16,21 @@ export CROSS_COMPILE=../aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export ANDROID_MAJOR_VERSION=10
 make clean && make distclean
 make a10_00_defconfig
-make menuconfig
+
+
+echo ""
+echo ""
+echo ""    
+while true; do
+    
+    read -p "Do you wish to edit kernel using make menuconfig? " yn
+    case $yn in
+        [Yy]* ) echo "starting menuconfig...";make menuconfig; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 make -j8
 cp arch/arm64/boot/Image ../
 echo "Compiled successfuly, Image file in folder."
