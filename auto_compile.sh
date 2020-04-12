@@ -3,11 +3,12 @@ echo "Don't forget to root your device using magisk"
 ## install tools
 
 echo "installing tools."
-sudo apt-get install git > /dev/null 2>&1
+sudo apt-get install git
 
 url="https://github.com/mscalindt/aarch64-linux-android-4.9.git"
 folder="aarch64-linux-android-4.9"
-if ! git clone "${url}" "${folder}" 2>/dev/null && [ -d "${folder}" ] ; then
+echo "cloning toolchain..."
+if ! git clone "${url}" "${folder}" && [ -d "${folder}" ] ; then
     echo "Clone failed because the folder ${folder} exists"
 fi
 
@@ -32,5 +33,10 @@ while true; do
 done
 
 make -j8
-cp arch/arm64/boot/Image ../
+cd ..
+wget "https://forum.xda-developers.com/attachment.php?attachmentid=4825093&d=1569201744" -O AIK.gz
+tar xf AIK.gz
+rm AIK.gz
+cp Kernel/arch/arm64/boot/Image ./AIK-Linux
+cd AIK-Linux
 echo "Compiled successfuly, Image file in folder."
