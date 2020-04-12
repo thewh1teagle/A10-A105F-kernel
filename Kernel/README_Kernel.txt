@@ -10,6 +10,7 @@
         - to Build
 
                 $ make a10_00_defconfig
+                $ make menuconfig (edit your kernel as you like)
                 $ make -j64
 
 2. Output files
