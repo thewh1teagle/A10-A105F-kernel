@@ -34,9 +34,22 @@ done
 
 make -j8
 cd ..
-wget "https://forum.xda-developers.com/attachment.php?attachmentid=4825093&d=1569201744" -O AIK.gz
+wget -nc "https://forum.xda-developers.com/attachment.php?attachmentid=4825093&d=1569201744" -O AIK.gz
 tar xf AIK.gz
 rm AIK.gz
 cp Kernel/arch/arm64/boot/Image ./AIK-Linux
 cd AIK-Linux
-echo "Compiled successfuly, Image file in folder."
+echo "Compiled successfuly, Image file in AIK_Linux folder."
+
+
+
+
+while true; do
+
+    read -p "Do you want to auto repack the compiled kernel Image? " yn
+    case $yn in
+        [Yy]* ) echo "starting repacking script...";
+        [Nn]* ) exit 0;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
