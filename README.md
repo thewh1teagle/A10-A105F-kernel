@@ -6,12 +6,12 @@ Instructions:
 
 
 1. 
-root your device ( using [https://forum.xda-developers.com/galaxy-a10/how-to/magisk-root-galaxy-a10-series-t3963822](magisk) )
+root your device ( using [magisk](https://forum.xda-developers.com/galaxy-a10/how-to/magisk-root-galaxy-a10-series-t3963822) )
 
 
 2. 
-install twrp recovery
-https://forum.xda-developers.com/galaxy-a10/development/recovery-twrp-3-3-1-galaxy-a10-exynos-t3963825
+install [twrp recovery](https://forum.xda-developers.com/galaxy-a10/development/recovery-twrp-3-3-1-galaxy-a10-exynos-t3963825)
+
 
 3.
 
