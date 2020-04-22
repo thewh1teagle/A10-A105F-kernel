@@ -1,4 +1,4 @@
-# A10-A105F-kernel
+# A10-A105F-kernel https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>
 Kernel for Samsung Galaxy A10 (SM-A105F) (from Samsung Open Source Release Center)
 
 
