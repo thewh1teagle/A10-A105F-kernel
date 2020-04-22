@@ -6,8 +6,8 @@ Instructions:
 
 
 1. 
-root your device ( using magisk )
-https://forum.xda-developers.com/galaxy-a10/how-to/magisk-root-galaxy-a10-series-t3963822
+root your device ( using [https://forum.xda-developers.com/galaxy-a10/how-to/magisk-root-galaxy-a10-series-t3963822](magisk) )
+
 
 2. 
 install twrp recovery
