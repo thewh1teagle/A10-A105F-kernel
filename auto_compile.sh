@@ -3,7 +3,7 @@ echo "Don't forget to root your device using magisk"
 ## install tools
 
 echo "installing tools."
-sudo apt-get install git
+sudo apt-get install libncurses5-dev libncursesw5-dev
 
 url="https://github.com/mscalindt/aarch64-linux-android-4.9.git"
 folder="aarch64-linux-android-4.9"
